@@ -54,8 +54,47 @@ Figure -02 HALF Subtractor
 
 Developed by: RegisterNumber:*/
 
+HALF ADDER 
+
+```
+module halfadder(a,b,sum,carry);
+input a,b;
+output sum,carry;
+assign sum = a^b;
+assign carry = a&b;
+endmodule
+
+```
+HALF SUBTRACTOR
+
+```
+module halfsubt(a,b,diff,Bo);
+input a,b;
+output diff,Bo;
+assign diff = a^b;
+assign bo = ~a & b;
+endmodule
+
+```
 **RTL Schematic**
+HALF ADDER
+
+![Screenshot 2024-10-10 105409](https://github.com/user-attachments/assets/f48f1776-8134-4189-9840-36349fc500c3)
+
+HALF SUBTRACTOR 
+
+![Screenshot 2024-10-10 111111](https://github.com/user-attachments/assets/aea45f72-5691-4696-a732-a98ab99764ad)
+
 
 **Output/TIMING Waveform**
+HALF ADDER
+
+![Screenshot 2024-10-10 110244](https://github.com/user-attachments/assets/385b859c-fff3-4ff9-b2b7-b5670e8099eb)
+
+HALF SUBTRACTOR 
+
+![Screenshot 2024-10-10 111707](https://github.com/user-attachments/assets/bd1966cf-aeaa-4afa-b4e7-928cb438935f)
 
 **Result:**
+
+Thus, the given half adder and half subracter executed successfully using quartus.
